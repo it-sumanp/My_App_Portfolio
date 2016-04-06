@@ -53,10 +53,11 @@ public class MainActivity extends AppCompatActivity {
     // Called when the user touches the button
     public void showMessage(View view) {
 
-        String message="";
+        String message;
 
         Integer clickedButtonId = view.getId();
 
+        //assign proper text message based on button clicked
         switch (clickedButtonId){
             case R.id.button_capstone:
                 message = getResources().getString(R.string.button_capstone_text);
